@@ -41,19 +41,19 @@
 			}
 		},
 		{
-			"file": "src/components/gameHelpers.js",
+			"file": "src/App.css",
 			"settings":
 			{
-				"buffer_size": 5848,
+				"buffer_size": 1089,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/App.css",
+			"file": "public/index.html",
 			"settings":
 			{
-				"buffer_size": 975,
+				"buffer_size": 1865,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -120,8 +120,8 @@
 	"expanded_folders":
 	[
 		"/home/ganapathy/Projects/Chess",
-		"/home/ganapathy/Projects/Chess/src",
-		"/home/ganapathy/Projects/Chess/src/components"
+		"/home/ganapathy/Projects/Chess/public",
+		"/home/ganapathy/Projects/Chess/src"
 	],
 	"file_history":
 	[
@@ -163,7 +163,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -197,48 +197,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/components/gameHelpers.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3067,
-								3067
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2808.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "src/App.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 975,
+						"buffer_size": 1089,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								580,
-								580
+								1087,
+								1087
 							]
 						],
 						"settings":
@@ -248,10 +219,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 624.0,
+						"translation.y": 1482.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1865,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1647,
+								1647
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
