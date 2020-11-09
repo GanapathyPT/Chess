@@ -17,9 +17,6 @@ body {
   display: flex;
 }
 
-.board-container {
-}
-
 .board-item {
   background-color: #f0d9b5;
   width: calc(100vh / 9);
@@ -42,5 +39,31 @@ body {
 }
 
 .poss {
-  background-color: lightgreen;
+  background-color: #0BB5FF;
+}
+
+.game-over,
+.winner {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.new-game-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #000;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .board-item {
+    height: calc(100vw / 9);
+    width: calc(100vw / 9);
+    font-size: 40px;
+  }
 }

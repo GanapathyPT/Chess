@@ -7,6 +7,7 @@ import {
 	getPossibilities,
 } from "./gameHelpers";
 
+let winner = null;
 const selected = [null, null];
 let flag = false;
 
@@ -23,14 +24,23 @@ export default function Chess() {
 			if (row.includes(currPlayer[4]))
 				x = false;
 		})
-		if (x)
+		if (x){
 			setGameCompleted(true);
+			winner = currPlayer === PLAYER_ONE ? "White" : "Black"
+		}
 	}
 
 	useEffect(checkGameOver, [board, currPlayer]);
 
 	const movePiece = (i,j) => {
 		const newBoard = board.map(e => [...e]);
+
+		if (newBoard[selected[0]][selected[1]] === "♟" ||
+			newBoard[selected[0]][selected[1]] === "♙"){
+			if (i === 0 || i === 7){
+				newBoard[selected[0]][selected[1]] = currPlayer[3];
+			}
+		}
 
 		newBoard[i][j] = newBoard[selected[0]][selected[1]];
 		newBoard[selected[0]][selected[1]] = " ";
@@ -56,7 +66,15 @@ export default function Chess() {
 	}
 
 	if (gameCompleted)
-		return <div>GAME OVER</div>
+		return (
+			<div className="full-screen">
+				<p className="game-over">GAME OVER</p>
+				<p className="winner">{ winner } wins</p>
+				<button className="new-game-btn">
+					New Game
+				</button>
+			</div>
+		)
 
 	return (
 		<div className="full-screen">
