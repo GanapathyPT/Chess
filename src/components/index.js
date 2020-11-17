@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { 
 	INITIAL_BOARD,
@@ -37,9 +37,8 @@ export default function Chess() {
 
 		if (newBoard[selected[0]][selected[1]] === "♟" ||
 			newBoard[selected[0]][selected[1]] === "♙"){
-			if (i === 0 || i === 7){
+			if (i === 0 || i === 7)
 				newBoard[selected[0]][selected[1]] = currPlayer[3];
-			}
 		}
 
 		newBoard[i][j] = newBoard[selected[0]][selected[1]];
@@ -70,11 +69,11 @@ export default function Chess() {
 			<div className="full-screen">
 				<p className="game-over">GAME OVER</p>
 				<p className="winner">{ winner } wins</p>
-				<button className="new-game-btn">
+				<button onClick={() => window.location.reload()} className="new-game-btn">
 					New Game
 				</button>
 			</div>
-		)
+		);
 
 	return (
 		<div className="full-screen">
